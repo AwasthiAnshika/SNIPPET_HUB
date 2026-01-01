@@ -27,7 +27,7 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 4000;
 
 async function start(){
-  await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/code_snippets');
+  await mongoose.connect(process.env.MONGODB_URI);
   console.log('✅ MongoDB connected');
   
   // Ensure indexes are created
