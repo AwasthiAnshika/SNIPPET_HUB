@@ -15,7 +15,7 @@ async function createIndexes() {
   try {
     console.log('🔄 Connecting to MongoDB...')
     await mongoose.connect(
-      process.env.MONGO_URI || 'mongodb://localhost:27017/code_snippets'
+      process.env.MONGODB_URI
     )
     console.log('✅ Connected to MongoDB')
 

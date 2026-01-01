@@ -8,7 +8,7 @@ describe('Snippets', ()=>{
   let userToken;
   let snippetId;
   beforeAll(async ()=>{
-    await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/code_snippets_test');
+    await mongoose.connect(process.env.MONGODB_URI);
     await Snippet.deleteMany({});
     await User.deleteMany({});
     const s = await Snippet.create({ title: 'search me', description: 'desc', language: 'javascript', tags: ['api'], code: 'console.log(1)' });

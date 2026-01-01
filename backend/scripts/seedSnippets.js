@@ -20,7 +20,7 @@ function genCode(lang, i){
 }
 
 async function seed(){
-  await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/code_snippets');
+  await mongoose.connect(process.env.MONGODB_URI);
   console.log('Connected to mongo');
   await Snippet.deleteMany({});
   const items = [];

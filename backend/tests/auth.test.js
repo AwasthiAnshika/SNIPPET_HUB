@@ -5,7 +5,7 @@ const User = require('../src/models/User');
 
 describe('Auth', ()=>{
   beforeAll(async ()=>{
-    await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/code_snippets_test');
+    await mongoose.connect(process.env.MONGODB_URI);
     await User.deleteMany({});
   });
   afterAll(async ()=>{ await mongoose.connection.close(); });
