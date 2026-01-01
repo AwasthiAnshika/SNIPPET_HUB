@@ -6,6 +6,14 @@ A full-stack MVP application that intelligently searches code snippets across mu
 
 ---
 
+## 🌐 Live Demo
+
+🚀 **[https://snippet-hub-sigma.vercel.app](https://snippet-hub-sigma.vercel.app)**
+
+Try the application live! Create an account or login to explore code snippets, save favorites, and get AI-powered suggestions.
+
+---
+
 ## 📸 Screenshots
 
 ### Home Page - Search Interface
